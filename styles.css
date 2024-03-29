@@ -6,6 +6,13 @@
     font-weight: 400;
     font-optical-sizing: auto;
 }
+@font-face{
+    font-family: "OpenSans-Bold";
+    src: url("./fonts/OpenSans.ttf") format("ttf"),
+         url('./fonts/OpenSans.ttf') format('woff');
+    font-weight: 800;
+    font-optical-sizing: auto;
+}
 :root{
     --rojo: #d03b40;
     --beige: #ded6c0;
@@ -20,7 +27,8 @@
     margin: 0;
 }
 body{
-    font-family: "OpenSans-Regular";
+    font-family: "OpenSans-Regular", sans-serif;
+    min-width: 300px;
 }
 h1,h2,h3{
 
@@ -42,3 +50,43 @@ p{
 }
 
 /* ------------------ Cabecera de la página ------------------ */
+.header-log-nav{
+    min-height: 400px;
+    min-width: 300px;
+    background-image: url("./img/Fondo1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 24px 12px;
+    color: var(--blanco);
+    
+}
+.log-nav{
+    padding: 24px 12px;
+}
+header nav{
+    float: right;
+
+}
+.header-content{
+    text-align: center;
+    padding: 24px 12px;
+    max-width: 500px;
+    margin: auto;
+}
+.header-content h1{
+    font-family: "OpenSans-Bold", sans-serif;
+    padding-bottom: 24px;
+
+}
+.horizontal-line{
+    width: 50px;
+    min-width: 200px;
+    min-height: 2px;
+    margin: auto;
+    background-color: var(--blanco);
+}
+.header-log-nav p{
+    padding: 24px 12px;
+    text-align: center;
+}
